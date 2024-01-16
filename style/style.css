@@ -82,7 +82,8 @@ main {
 .popular-tour-description p,
 .popular-tour-description ul>li,
 .destination-section p,
-.subscribe-section-description p {
+.subscribe-section-description p,
+.footer-description {
     width: 560px;
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -228,7 +229,7 @@ main {
 
 .why-choose-us-row2 img,
 .why-choose-us-row2 h3 {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
 }
 
 
@@ -238,8 +239,10 @@ main {
     display: grid;
     grid-template-columns: 1.7fr 2.3fr;
     margin-top: 100px;
+    margin-bottom: 0px;
     gap: 1.5rem;
-    /* height: 345px; */
+    height: 425px;
+
 }
 
 .subscribe-section-description {
@@ -324,16 +327,64 @@ main {
 
 
 
-
-footer{
-    height: 500px;
-    background-color: #FF5400;
+/* footer section style start */
+footer {
+    margin-top: 100px;
+    width: 100vw;
+    height: 502px;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
 }
 
+.footer-title {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+}
 
+.footer-title h1 {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
 
+.color-orange {
+    color: #FF5400;
+}
 
+.footer-description {
+    width: 769px;
+    color: #5A5A5D;
+    margin: 0px auto;
+}
 
+.footer-site-link-icon img {
+    height: 1.75rem;
+
+}
+
+.footer-site-link-icon {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 2rem 0rem 3.1rem 0rem;
+}
+
+.hr-line {
+    margin: 0px auto;
+    width: 872px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.all-right {
+    color: #131318;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
 
 
 
@@ -440,7 +491,7 @@ footer{
 
     .why-choose-us-row1-col {
         width: 92%;
-        height: 330px;
+        height: 340px;
         padding: 1rem 0rem 1rem 1rem;
         margin: 0px auto;
     }
@@ -450,23 +501,26 @@ footer{
     }
 
     .why-choose-us-row2 img,
-    .why-choose-us-row2 h3 {
-        padding-left: 0rem;
+    .why-choose-us-row2 h3,
+    .why-choose-us-row1 img,
+    .why-choose-us-row1 h3 {
+        padding-left: 1rem;
     }
 
     /* subscribe-section responsive style */
     .subscribe-section {
         margin-top: 1.5rem;
+        height: 740px;
     }
 
     .subscribe-section-description {
         width: 75%;
     }
 
-   .subscribe-section-image img{
-    width: 99%;
-    height: 300px;
-   }
+    .subscribe-section-image img {
+        width: 99%;
+        height: 300px;
+    }
 
     .subscribe-section-description p {
         width: 250px;
@@ -488,4 +542,41 @@ footer{
         font-size: 1.3rem;
     }
 
+    /* Responsive footer style start*/
+    footer {
+        margin-top: 1.5rem;
+        height: 310px;
+        ;
+    }
+
+    .footer-title {
+        padding-top: 10px;
+    }
+
+    .footer-title img {
+        width: 28.724px;
+        height: 32.516px;
+    }
+
+    .footer-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .footer-description {
+        width: 287px;
+        font-size: 14px;
+    }
+
+    .footer-site-link-icon {
+        margin: 1rem 0px;
+    }
+
+    .all-right {
+        margin-top: 1.5rem;
+        font-size: 14px;
+    }
+
+    .hr-line {
+        width: 335px;
+    }
 }
