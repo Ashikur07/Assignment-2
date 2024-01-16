@@ -3,7 +3,8 @@
     font-family: 'Mulish', sans-serif;
 }
 
-header {
+header,
+main {
     width: 78vw;
     margin: 0px auto;
 }
@@ -64,13 +65,53 @@ header {
     width: 150px;
 }
 
+/* Main section style start */
+/* Popular tour section style */
+.popular-tour-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.popular-tour-description h1 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.popular-tour-description p,
+.popular-tour-description ul>li {
+    width: 560px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.popular-tour-description ul>li {
+    width: 500px;
+    margin-bottom: 1rem;
+}
+
+.common-button-style {
+    padding: 0.8rem 2.2rem;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
 
 
 
 
 
 @media screen and (max-width:600px) {
-    header {
+    /* Header section Responsive style */
+    header ,main{
         width: 88vw;
     }
 
@@ -81,7 +122,7 @@ header {
 
     .banner-section-description {
         margin: 0px auto;
-        width: 350px;
+        width: 330px;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5rem;
@@ -100,9 +141,25 @@ header {
         width: 255px;
     }
 
-    .btn-primary{
+    .btn-primary {
         width: 285px;
     }
 
+    /* Main section Responsive style */
+    /* Popular tour section */
+
+    .popular-tour-section {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .popular-tour-description h1 {
+        font-size: 1.5rem;
+    }
+
+    .popular-tour-description p,.popular-tour-description ul>li{
+        width: 100%;
+    }
 
 }
