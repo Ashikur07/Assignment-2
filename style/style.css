@@ -1,4 +1,4 @@
-/* shared style  */
+/* Common style */
 * {
     font-family: 'Mulish', sans-serif;
 }
@@ -29,7 +29,7 @@ nav {
     align-items: center;
 }
 
-.home-font-weight{
+.home-font-weight {
     font-weight: 700;
 }
 
@@ -49,8 +49,10 @@ nav {
     display: none;
 }
 
-/* banner-section style */
+/* Nav style end */
 
+
+/* banner-section style start*/
 .banner-section {
     margin-top: -30px;
     border-radius: 1rem;
@@ -105,8 +107,11 @@ nav {
     width: 150px;
 }
 
+/* banner-section style end */
+
+
 /* Main section style start */
-/* Popular tour section style */
+/* Popular tour section style start*/
 .popular-tour-section {
     display: flex;
     justify-content: space-between;
@@ -147,8 +152,11 @@ nav {
     margin-top: 20px;
 }
 
+/* Popular tour section style end*/
 
-/* Destination section style */
+
+
+/* Destination section style start*/
 .destination-section,
 .why-choose-us {
     text-align: center;
@@ -177,7 +185,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-
 
 .destination-section-images-row1 img,
 .destination-section-images-row3 img {
@@ -218,8 +225,11 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+/* Destination section style end*/
 
-/* our-services-section */
+
+
+/* our-services-section style start */
 .our-services-section {
     height: 530px;
     margin: 85px auto;
@@ -280,10 +290,11 @@ nav {
     width: 50px;
 }
 
+/* our-services-section style end */
 
 
 
-/* why-choose-us section style */
+/* why-choose-us section style start */
 .why-choose-us-row1 {
     display: flex;
     gap: 1.5rem;
@@ -307,15 +318,12 @@ nav {
 .why-choose-us-row1-col img {
     width: 74px;
     height: 74px;
-    /* padding-left: 2.5rem;
-    padding-top: 2rem; */
 }
 
 .why-choose-us-row1-col h3 {
     color: #131318;
     font-size: 1.5rem;
     font-weight: 800;
-    /* padding-left: 2.5rem; */
 }
 
 .why-choose-us-row1-col p {
@@ -336,9 +344,12 @@ nav {
     padding-left: 2.5rem;
 }
 
+/* why-choose-us section style end */
 
 
-/* subscribe-section Style */
+
+
+/* subscribe-section Style start */
 .subscribe-section {
     display: grid;
     grid-template-columns: 1.7fr 2.3fr;
@@ -346,7 +357,6 @@ nav {
     margin-bottom: 0px;
     gap: 1.5rem;
     height: 425px;
-
 }
 
 .subscribe-section-description {
@@ -429,6 +439,9 @@ nav {
     margin-top: 0px;
 }
 
+/* subscribe-section Style end */
+
+
 
 
 /* footer section style start */
@@ -490,6 +503,7 @@ footer {
     margin-top: 3rem;
 }
 
+/* footer section style end*/
 
 
 
@@ -499,14 +513,17 @@ footer {
 
 
 
+
+/* Responsive style for mobile device */
 
 @media screen and (max-width:600px) {
 
-    /* Header section Responsive style */
+    /* common style */
     header,
     main {
         width: 88vw;
     }
+
 
     /* Responsive nav style start */
     .nav-title img {
@@ -541,7 +558,7 @@ footer {
         margin: 10px;
     }
 
-    .dropdown-container a:hover{
+    .dropdown-container a:hover {
         background-color: aqua;
     }
 
@@ -549,9 +566,12 @@ footer {
         display: block;
     }
 
+    /* Responsive nav style end */
 
 
 
+
+    /* Responsive banner-section style start */
     .banner-section {
         margin-top: -20px;
         height: 620px;
@@ -588,10 +608,12 @@ footer {
     .btn-primary {
         width: 285px;
     }
+    /* Responsive banner-section style end */
+
+
 
     /* Main section Responsive style */
-    /* Popular tour section */
-
+    /* Popular tour section style start */
     .popular-tour-section {
         flex-direction: column;
         gap: 1.5rem;
@@ -610,19 +632,19 @@ footer {
     .why-choose-us p {
         width: 100%;
     }
+    /* Popular tour section style end */
 
 
-    /* our-services-section responsive style */
+
+    /* our-services-section responsive style start*/
     .our-services-section {
         height: 1480px;
-
     }
 
     .services-card-section {
         flex-direction: column;
         gap: 1.5rem;
         align-items: center;
-
     }
 
     .card {
@@ -645,11 +667,12 @@ footer {
     .our-services-section {
         margin: 3.5rem auto;
     }
+    /* our-services-section responsive style end*/
 
 
 
 
-    /* destination-section style */
+    /* Responsive destination-section style start */
     .destination-section,
     .why-choose-us,
     .why-choose-us-row2 {
@@ -674,9 +697,11 @@ footer {
     .destination-section-images-row3 {
         margin-top: 1rem;
     }
+    /* Responsive destination-section style end */
 
-    /* why-choose-us Responsive style */
 
+
+    /* why-choose-us Responsive style start*/
     .why-choose-us-row1 {
         flex-direction: column;
         gap: 1rem;
@@ -699,8 +724,11 @@ footer {
     .why-choose-us-row1 h3 {
         padding-left: 1rem;
     }
+    /* why-choose-us Responsive style end*/
 
-    /* subscribe-section responsive style */
+
+
+    /* subscribe-section responsive style  start*/
     .subscribe-section {
         margin-top: 2.5rem;
         height: 800px;
@@ -734,6 +762,9 @@ footer {
     .save-up-75 h1 {
         font-size: 1.3rem;
     }
+    /* subscribe-section responsive style  end*/
+
+
 
     /* Responsive footer style start*/
     footer {
@@ -772,4 +803,5 @@ footer {
     .hr-line {
         width: 335px;
     }
+    /* Responsive footer style end*/
 }
